@@ -20,7 +20,7 @@ my $query = '{
   "query":{
     "creator":null,
     "guid":null,
-    "id":"/user/hds/default_domain/net_metaweb_test",
+    "id":"/user/hds/default_domain/www_metaweb_test",
     "name":null,
     "properties":[],
     "type":"/type/type"
@@ -40,13 +40,13 @@ ok($result = $mh->result('netmetawebquery', 'perl'), 'Result can be fetched as a
 
 my $expected = {
 	  creator => '/user/hds',
-	  name => 'Perl-Metaweb Test',
+	  name => 'WWW::Metaweb Test',
 	  type => '/type/type',
-	  guid => '#9202a8c04000641f8000000005859e14',
-	  id => '/user/hds/default_domain/net_metaweb_test',
+	  guid => '#9202a8c04000641f8000000005c81c61',
+	  id => '/user/hds/default_domain/www_metaweb_test',
 	  properties => [
-			    '/user/hds/default_domain/net_metaweb_test/test_creator',
-			    '/user/hds/default_domain/net_metaweb_test/test_location'
+	  		  '/user/hds/default_domain/www_metaweb_test/install_time',
+			  '/user/hds/default_domain/www_metaweb_test/metaweb_version'
 			  ]
 };
 is_deeply($result, $expected, 'Structure of test query is correct.');

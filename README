@@ -1,7 +1,5 @@
-WWW::Metaweb version 0.01
+WWW::Metaweb version 0.02
 =========================
-
-Version 0.01 is my first CPAN distribution, so there may be a couple of issues.
 
 ** WWW::Metaweb **
 
@@ -30,9 +28,11 @@ To install this module type the following:
 DEPENDENCIES
 
 WWW::Metaweb requires:
-	JSON
+	JSON::XS
 	LWP::UserAgent
 	URI::Escape
+	HTTP::Request
+	Carp
 
 COPYRIGHT AND LICENCE
 
